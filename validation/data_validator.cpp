@@ -133,8 +133,8 @@ DataValidator::confidence(uint64_t timestamp)
 
 	/* we got the exact same sensor value N times in a row */
 	} else if (_value_equal_count > _value_equal_count_threshold) {
-		_error_mask |= ERROR_FLAG_STALE_DATA;
-		ret = 0.0f;
+		//_error_mask |= ERROR_FLAG_STALE_DATA;
+		//ret = 0.0f;
 
 	/* check error count limit */
 	} else if (_error_count > NORETURN_ERRCOUNT) {
